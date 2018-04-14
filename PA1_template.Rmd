@@ -1,12 +1,11 @@
-
-Title "Reproducible Research Project 1"
-  author: "MD"
+---
+title: "RepData_Peerassessment2"
+author: "MD"
 date: "April 14, 2018"
-output: 
-   html_document:
+output:
+  html_document:
       keep_md: true
-  
---------------------
+---
 ##Q1- Total number of steps per day computation
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -137,9 +136,4 @@ library(ggplot2)
 ggplot(IntervalDF, aes(x=interval, y=Avg, color=Daytype))+
   geom_line()+ labs(title="Average Steps per Interval Based on Day Type)", x="interval", y="Average Number of Steps")+facet_wrap(~Daytype, ncol=1, nrow=2)
 ```
-
-```{r}
-
-```
-
 
